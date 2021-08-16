@@ -9,10 +9,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
 	
 	private String MYPROFILE="//span[contains(text(),'Profile')]";
-	private String LOGIN="//a[contains(text(),'log in')]";
-	private String USERNAME="//input[@name='email']";
-	private String PASSWORD="//input[@name='password']";
-	private String SIGNIN="//button[contains(text(),'Log in')]";
+	private String LOGIN="//a[contains(text(),'login')]";
+	private String USERNAME="//input[@*='tel']";
+	private String CONTINUE="//div[contains(text(),'CONTINUE')]";
+	private String LOGINUSINGPWD="//span[contains(text(),'Password')]";
+	private String PASSWORD="//input[@*='password']";
+	private String SIGNIN="//button[contains(text(),'LOGIN')]";
 	private WebDriver driver;
 	private WebDriverWait wait;
 	
@@ -47,7 +49,16 @@ public class LoginPage {
 		
 	}
 	
-	
+	public void clickOnLoginUsingPassword(){
+		driver.findElement(By.xpath(LOGINUSINGPWD)).click();
+	}
+
+
+	public void ClickContinue() {
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(CONTINUE))));
+		driver.findElement(By.xpath(CONTINUE)).click();
+		
+	}
 	
 	
 

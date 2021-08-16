@@ -8,6 +8,7 @@
           <include name="endTest"/>
           <include name="setDriver"/>
           <include name="login"/>
+          <include name="quitDriver"/>
         </methods>
       </class> <!-- com.myntra.testcases.LoginTestCase -->
     </classes>

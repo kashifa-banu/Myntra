@@ -60,17 +60,20 @@ public class BaseClass {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			test.log(LogStatus.FAIL, "TestCase failed" + result.getThrowable());
+			test.log(LogStatus.FAIL, test.addScreenCapture(path));
+			//test.log(LogStatus.FAIL, result.);
 			
 			}
 			else
 				if(result.getStatus()==ITestResult.SKIP)
 					test.log(LogStatus.SKIP, result.getMethod()+"Skip");
 	}
-	/*@AfterTest
+	@AfterTest
 	public void quitDriver(){
 		driver.quit();
 		reports.endTest(test);
 		reports.flush();
-	}*/
+	}
 	
 }

@@ -11,8 +11,10 @@ public class LoginTestCase extends BaseClass{
 	void login(){
 		LoginPage loginpage= new LoginPage(driver);
 		loginpage.clicklogin();
-		loginpage.enterUserName("kashifabn4@gmail.com");
-		loginpage.enterPassword("rafath100");
+		loginpage.enterUserName("8884322254");
+		loginpage.ClickContinue();
+		loginpage.clickOnLoginUsingPassword();
+		loginpage.enterPassword("Welcome2ibm!");
 		loginpage.login();
 		SearchPage searchpage = new SearchPage(driver);
 		searchpage.clickSearch();
