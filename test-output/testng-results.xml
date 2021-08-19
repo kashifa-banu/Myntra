@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63193" started-at="2021-08-16T16:52:27Z" finished-at="2021-08-16T16:53:31Z">
+  <suite name="Default suite" duration-ms="56817" started-at="2021-08-17T15:06:28Z" finished-at="2021-08-17T15:07:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63193" started-at="2021-08-16T16:52:27Z" finished-at="2021-08-16T16:53:31Z">
+    <test name="Default test" duration-ms="56817" started-at="2021-08-17T15:06:28Z" finished-at="2021-08-17T15:07:25Z">
       <class name="com.myntra.testcases.LoginTestCase">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="setDriver" is-config="true" duration-ms="34921" started-at="2021-08-16T22:22:27Z" finished-at="2021-08-16T22:23:02Z">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="setDriver" is-config="true" duration-ms="31769" started-at="2021-08-17T20:36:28Z" finished-at="2021-08-17T20:37:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="login" duration-ms="26030" started-at="2021-08-16T22:23:02Z" finished-at="2021-08-16T22:23:28Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="login" duration-ms="23679" started-at="2021-08-17T20:37:00Z" finished-at="2021-08-17T20:37:24Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
   (Session info: chrome=92.0.4515.131)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ENCOPDBANLT0724', ip: '192.168.244.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ada6739e95602e94402bbdd8b8bc22a
-*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c21499897fcd7b54f26232b4d26be7d3
+*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
   (Session info: chrome=92.0.4515.131)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ENCOPDBANLT0724', ip: '192.168.244.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ada6739e95602e94402bbdd8b8bc22a
-*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c21499897fcd7b54f26232b4d26be7d3
+*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -81,7 +81,7 @@ Session ID: 0ada6739e95602e94402bbdd8b8bc22a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="endTest" is-config="true" duration-ms="449" started-at="2021-08-16T22:23:28Z" finished-at="2021-08-16T22:23:29Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="endTest" is-config="true" duration-ms="184" started-at="2021-08-17T20:37:24Z" finished-at="2021-08-17T20:37:24Z">
           <params>
             <param index="0">
               <value>
@@ -92,7 +92,7 @@ Session ID: 0ada6739e95602e94402bbdd8b8bc22a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="quitDriver" is-config="true" duration-ms="1738" started-at="2021-08-16T22:23:29Z" finished-at="2021-08-16T22:23:31Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="quitDriver" is-config="true" duration-ms="1149" started-at="2021-08-17T20:37:24Z" finished-at="2021-08-17T20:37:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

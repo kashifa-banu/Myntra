@@ -12,7 +12,7 @@ public class LoginPage {
 	private String LOGIN="//a[contains(text(),'login')]";
 	private String USERNAME="//input[@*='tel']";
 	private String CONTINUE="//div[contains(text(),'CONTINUE')]";
-	private String LOGINUSINGPWD="//span[contains(text(),'Password')]";
+	private String LOGINUSINGPWD="//span[contains(text(),'Password')]/parent::div";
 	private String PASSWORD="//input[@*='password']";
 	private String SIGNIN="//button[contains(text(),'LOGIN')]";
 	private WebDriver driver;
@@ -50,6 +50,7 @@ public class LoginPage {
 	}
 	
 	public void clickOnLoginUsingPassword(){
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(LOGINUSINGPWD))));
 		driver.findElement(By.xpath(LOGINUSINGPWD)).click();
 	}
 
