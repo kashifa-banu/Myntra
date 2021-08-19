@@ -1,38 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56817" started-at="2021-08-17T15:06:28Z" finished-at="2021-08-17T15:07:25Z">
+  <suite name="Suite" duration-ms="77626" started-at="2021-08-19T17:24:24Z" finished-at="2021-08-19T17:25:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56817" started-at="2021-08-17T15:06:28Z" finished-at="2021-08-17T15:07:25Z">
+    <test name="Test2" duration-ms="77626" started-at="2021-08-19T17:24:24Z" finished-at="2021-08-19T17:25:42Z">
       <class name="com.myntra.testcases.LoginTestCase">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="setDriver" is-config="true" duration-ms="31769" started-at="2021-08-17T20:36:28Z" finished-at="2021-08-17T20:37:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="login" duration-ms="23679" started-at="2021-08-17T20:37:00Z" finished-at="2021-08-17T20:37:24Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="login" duration-ms="22660" started-at="2021-08-19T22:55:17Z" finished-at="2021-08-19T22:55:39Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
-  (Session info: chrome=92.0.4515.131)
+  (Session info: chrome=92.0.4515.159)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ENCOPDBANLT0724', ip: '192.168.244.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'ENCOPDBANLT0724', ip: '192.168.215.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c21499897fcd7b54f26232b4d26be7d3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
 *** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
-  (Session info: chrome=92.0.4515.131)
+  (Session info: chrome=92.0.4515.159)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ENCOPDBANLT0724', ip: '192.168.244.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'ENCOPDBANLT0724', ip: '192.168.215.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c21499897fcd7b54f26232b4d26be7d3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
 *** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -81,22 +77,43 @@ Session ID: c21499897fcd7b54f26232b4d26be7d3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="endTest" is-config="true" duration-ms="184" started-at="2021-08-17T20:37:24Z" finished-at="2021-08-17T20:37:24Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="endTest" is-config="true" duration-ms="788" started-at="2021-08-19T22:55:39Z" finished-at="2021-08-19T22:55:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=LoginTestCase.login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=LoginTestCase.login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="quitDriver" is-config="true" duration-ms="1149" started-at="2021-08-17T20:37:24Z" finished-at="2021-08-17T20:37:25Z">
+      </class> <!-- com.myntra.testcases.LoginTestCase -->
+      <class name="com.myntra.testcases.SearchTestCase">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="setDriver" is-config="true" duration-ms="34186" started-at="2021-08-19T22:54:25Z" finished-at="2021-08-19T22:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="SearchForProduct" duration-ms="17838" started-at="2021-08-19T22:54:59Z" finished-at="2021-08-19T22:55:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchForProduct -->
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="endTest" is-config="true" duration-ms="3" started-at="2021-08-19T22:55:17Z" finished-at="2021-08-19T22:55:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchForProduct status=SUCCESS method=SearchTestCase.SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="quitDriver" is-config="true" duration-ms="2093" started-at="2021-08-19T22:55:40Z" finished-at="2021-08-19T22:55:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.myntra.testcases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.myntra.testcases.SearchTestCase -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>

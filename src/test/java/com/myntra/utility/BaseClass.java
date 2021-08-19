@@ -31,7 +31,7 @@ public class BaseClass {
 	@BeforeTest
 	public void setDriver(){
 		Date date = new Date();
-		String path = "./test-output/extentreports/reports_" + date.getDate()+date.getTime() + ".html";
+		String path = "./test-output/extentreports/reports.html";
 		reports = new ExtentReports(path);
 		test = reports.startTest("Myntra testCase");
 		WebDriverManager.chromedriver().setup();
@@ -42,33 +42,32 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		
 	}
+	public String getScreenShot(WebDriver driver) throws IOException{
+		String path="./test-output/ScreenShot/screen1.png";
+		File dest = new File(path);
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		File src=screenshot.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src, dest);		
+		return path;
+	}
 	@AfterMethod
-	public void endTest(ITestResult result){
+	public void endTest(ITestResult result) throws IOException{
 		if(result.getStatus()==ITestResult.SUCCESS)
 			test.log(LogStatus.PASS, result.getMethod() + "Pass");
 		else
 			if(result.getStatus()==ITestResult.FAILURE){
 				test.log(LogStatus.FAIL, result.getMethod()+"fail");
-				String path="./test-output/ScreenShot/screen1.png";
-				//File file = new File(path);
-			TakesScreenshot screenshot = (TakesScreenshot) driver;			
-			File src=screenshot.getScreenshotAs(OutputType.FILE);
-			File dest= new File(path);
-			try {
-				FileUtils.copyFile(src, dest);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			test.log(LogStatus.FAIL, "TestCase failed" + result.getThrowable());
-			test.log(LogStatus.FAIL, test.addScreenCapture(path));
-			//test.log(LogStatus.FAIL, result.);
-			
+				test.log(LogStatus.FAIL, "TestCase failed" + result.getThrowable());
+			test.log(LogStatus.INFO, test.addScreenCapture(getScreenShot(driver)));
+			//test.log(LogStatus.FAIL, test.);
 			}
 			else
 				if(result.getStatus()==ITestResult.SKIP)
 					test.log(LogStatus.SKIP, result.getMethod()+"Skip");
+		
+		
 	}
+	   	
 	@AfterTest
 	public void quitDriver(){
 		driver.quit();

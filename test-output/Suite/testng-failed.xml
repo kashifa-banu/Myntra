@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test1(failed)">
+  <test name="Test2(failed)">
     <classes>
       <class name="com.myntra.testcases.LoginTestCase">
         <methods>
           <include name="endTest"/>
-          <include name="setDriver"/>
           <include name="login"/>
         </methods>
       </class> <!-- com.myntra.testcases.LoginTestCase -->
+      <class name="com.myntra.testcases.SearchTestCase">
+        <methods>
+          <include name="endTest"/>
+          <include name="setDriver"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.myntra.testcases.SearchTestCase -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
