@@ -49,14 +49,16 @@ public class LoginPage {
 		
 	}
 	
-	public void clickOnLoginUsingPassword(){
+	public void clickOnLoginUsingPassword() throws InterruptedException{
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(LOGINUSINGPWD))));
 		driver.findElement(By.xpath(LOGINUSINGPWD)).click();
 	}
 
 
-	public void ClickContinue() {
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(CONTINUE))));
+	public void ClickContinue() throws InterruptedException {
+		Thread.sleep(2000);
+		//wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(CONTINUE))));
 		driver.findElement(By.xpath(CONTINUE)).click();
 		
 	}

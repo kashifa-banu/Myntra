@@ -8,10 +8,10 @@ import com.myntra.utility.BaseClass;
 public class LoginTestCase extends BaseClass{
 	
 	@Test
-	void login(){
+	void login() throws InterruptedException{
 		LoginPage loginpage= new LoginPage(driver);
 		loginpage.clicklogin();
-		loginpage.enterUserName("8843222541");
+		loginpage.enterUserName("9884322254");
 		loginpage.ClickContinue();
 		loginpage.clickOnLoginUsingPassword();
 		loginpage.enterPassword("Welcome2ibm!");

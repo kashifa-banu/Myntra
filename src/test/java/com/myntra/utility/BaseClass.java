@@ -43,7 +43,7 @@ public class BaseClass {
 		
 	}
 	public String getScreenShot(WebDriver driver) throws IOException{
-		String path="./test-output/ScreenShot/screen1.png";
+		String path=System.getProperty("user.dir") + "/test-output/ScreenShot/screen1.png";
 		File dest = new File(path);
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File src=screenshot.getScreenshotAs(OutputType.FILE);
@@ -67,6 +67,16 @@ public class BaseClass {
 		
 		
 	}
+/*	 public static String capture(WebDriver driver,String screenShotName) throws IOException
+	    {
+	        TakesScreenshot ts = (TakesScreenshot)driver;
+	        File source = ts.getScreenshotAs(OutputType.FILE);
+	        String dest = System.getProperty("user.dir") + "\ErrorScreenshots\" +screenShotName+".png";
+	        File destination = new File(dest);
+	        FileUtils.copyFile(source, destination);        
+	                     
+	        return dest;
+	    }*/
 	   	
 	@AfterTest
 	public void quitDriver(){

@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="77626" started-at="2021-08-19T17:24:24Z" finished-at="2021-08-19T17:25:42Z">
+  <suite name="Suite" duration-ms="40690" started-at="2021-08-19T17:55:36Z" finished-at="2021-08-19T17:56:16Z">
     <groups>
     </groups>
-    <test name="Test2" duration-ms="77626" started-at="2021-08-19T17:24:24Z" finished-at="2021-08-19T17:25:42Z">
+    <test name="Test2" duration-ms="40690" started-at="2021-08-19T17:55:36Z" finished-at="2021-08-19T17:56:16Z">
       <class name="com.myntra.testcases.LoginTestCase">
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="login" duration-ms="22660" started-at="2021-08-19T22:55:17Z" finished-at="2021-08-19T22:55:39Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="login" duration-ms="13231" started-at="2021-08-19T23:26:01Z" finished-at="2021-08-19T23:26:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='desktop-searchBar']"}
   (Session info: chrome=92.0.4515.159)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ENCOPDBANLT0724', ip: '192.168.215.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
-*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf60f2a35984d51f25a9cf74ba697e83
+*** Element info: {Using=xpath, value=//input[@class='desktop-searchBar']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='desktop-searchBar']"}
   (Session info: chrome=92.0.4515.159)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ENCOPDBANLT0724', ip: '192.168.215.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
-*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf60f2a35984d51f25a9cf74ba697e83
+*** Element info: {Using=xpath, value=//input[@class='desktop-searchBar']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -44,8 +44,8 @@ Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.myntra.pages.LoginPage.clickOnLoginUsingPassword(LoginPage.java:53)
-	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:16)
+	at com.myntra.pages.SearchPage.clickSearch(SearchPage.java:20)
+	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -77,7 +77,7 @@ Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="endTest" is-config="true" duration-ms="788" started-at="2021-08-19T22:55:39Z" finished-at="2021-08-19T22:55:40Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="endTest" is-config="true" duration-ms="457" started-at="2021-08-19T23:26:14Z" finished-at="2021-08-19T23:26:15Z">
           <params>
             <param index="0">
               <value>
@@ -90,15 +90,15 @@ Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
         </test-method> <!-- endTest -->
       </class> <!-- com.myntra.testcases.LoginTestCase -->
       <class name="com.myntra.testcases.SearchTestCase">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="setDriver" is-config="true" duration-ms="34186" started-at="2021-08-19T22:54:25Z" finished-at="2021-08-19T22:54:59Z">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="setDriver" is-config="true" duration-ms="11994" started-at="2021-08-19T23:25:36Z" finished-at="2021-08-19T23:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="SearchForProduct" duration-ms="17838" started-at="2021-08-19T22:54:59Z" finished-at="2021-08-19T22:55:17Z">
+        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="SearchForProduct" duration-ms="13319" started-at="2021-08-19T23:25:48Z" finished-at="2021-08-19T23:26:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchForProduct -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="endTest" is-config="true" duration-ms="3" started-at="2021-08-19T22:55:17Z" finished-at="2021-08-19T22:55:17Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="endTest" is-config="true" duration-ms="3" started-at="2021-08-19T23:26:01Z" finished-at="2021-08-19T23:26:01Z">
           <params>
             <param index="0">
               <value>
@@ -109,7 +109,7 @@ Session ID: 6cf8d0f7025c48c4752b6a4d6dd57a03
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="quitDriver" is-config="true" duration-ms="2093" started-at="2021-08-19T22:55:40Z" finished-at="2021-08-19T22:55:42Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="quitDriver" is-config="true" duration-ms="1637" started-at="2021-08-19T23:26:15Z" finished-at="2021-08-19T23:26:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
