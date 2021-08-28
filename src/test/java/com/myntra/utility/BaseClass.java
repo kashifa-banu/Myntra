@@ -3,6 +3,7 @@ package com.myntra.utility;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -34,9 +35,11 @@ public class BaseClass {
 	static Properties prop;
 	@BeforeTest
 	public void setDriver() throws IOException{
+		SimpleDateFormat format = new SimpleDateFormat("YYYY/MM/DD HH:MM:SS");
 		Date date = new Date();
+		SimpleDateFormat timeStamp = new SimpleDateFormat("MMddyyyy_HHmmss");
 		//String path="http://localhost:8080/job/FreeStyleJob/ws/test-output/extentreports/reports.html";
-	String path = "./test-output/extentreports/reports.html";		
+	String path = "./test-output/extentreports/reports_" +timeStamp.format(date) +".html";		
 		reports = new ExtentReports(path);
 		test = reports.startTest("Myntra testCase");
 		

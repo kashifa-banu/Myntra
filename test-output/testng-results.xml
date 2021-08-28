@@ -2,22 +2,50 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="66270" started-at="2021-08-28T18:21:44Z" finished-at="2021-08-28T18:22:51Z">
+  <suite name="Suite" duration-ms="41048" started-at="2021-08-28T18:54:19Z" finished-at="2021-08-28T18:55:00Z">
     <groups>
     </groups>
-    <test name="Test2" duration-ms="66270" started-at="2021-08-28T18:21:44Z" finished-at="2021-08-28T18:22:51Z">
+    <test name="Test2" duration-ms="41048" started-at="2021-08-28T18:54:19Z" finished-at="2021-08-28T18:55:00Z">
       <class name="com.myntra.testcases.LoginTestCase">
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@27efef64]" name="login" duration-ms="28574" started-at="2021-08-28T23:52:20Z" finished-at="2021-08-28T23:52:49Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@27efef64]" name="login" duration-ms="10652" started-at="2021-08-29T00:24:47Z" finished-at="2021-08-29T00:24:58Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[LoginFailure expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ENCOPDBANLT0724', ip: '192.168.166.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe1d3240c08946c7d6b602d16ce29b85
+*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: LoginFailure expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:22)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Password')]/parent::div"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ENCOPDBANLT0724', ip: '192.168.166.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe1d3240c08946c7d6b602d16ce29b85
+*** Element info: {Using=xpath, value=//span[contains(text(),'Password')]/parent::div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.myntra.pages.LoginPage.clickOnLoginUsingPassword(LoginPage.java:65)
+	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -45,11 +73,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@27efef64]" name="endTest" is-config="true" duration-ms="303" started-at="2021-08-28T23:52:49Z" finished-at="2021-08-28T23:52:49Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@27efef64]" name="endTest" is-config="true" duration-ms="324" started-at="2021-08-29T00:24:58Z" finished-at="2021-08-29T00:24:58Z">
           <params>
             <param index="0">
               <value>
@@ -62,15 +90,15 @@
         </test-method> <!-- endTest -->
       </class> <!-- com.myntra.testcases.LoginTestCase -->
       <class name="com.myntra.testcases.SearchTestCase">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="setDriver" is-config="true" duration-ms="31825" started-at="2021-08-28T23:51:44Z" finished-at="2021-08-28T23:52:16Z">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="setDriver" is-config="true" duration-ms="10987" started-at="2021-08-29T00:24:19Z" finished-at="2021-08-29T00:24:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="SearchForProduct" duration-ms="3839" started-at="2021-08-28T23:52:16Z" finished-at="2021-08-28T23:52:20Z">
+        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="SearchForProduct" duration-ms="17312" started-at="2021-08-29T00:24:30Z" finished-at="2021-08-29T00:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchForProduct -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="endTest" is-config="true" duration-ms="3" started-at="2021-08-28T23:52:20Z" finished-at="2021-08-28T23:52:20Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="endTest" is-config="true" duration-ms="3" started-at="2021-08-29T00:24:47Z" finished-at="2021-08-29T00:24:47Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="quitDriver" is-config="true" duration-ms="1666" started-at="2021-08-28T23:52:49Z" finished-at="2021-08-28T23:52:51Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@59f99ea]" name="quitDriver" is-config="true" duration-ms="1701" started-at="2021-08-29T00:24:58Z" finished-at="2021-08-29T00:25:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
