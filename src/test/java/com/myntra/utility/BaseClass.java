@@ -1,8 +1,11 @@
 package com.myntra.utility;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -28,18 +31,29 @@ public class BaseClass {
 	public static WebDriver driver;
 	static ExtentReports  reports;
 	static ExtentTest test;
+	static Properties prop;
 	@BeforeTest
-	public void setDriver(){
+	public void setDriver() throws IOException{
 		Date date = new Date();
-		String path = "./test-output/extentreports/reports.html";
+		String path = "./test-output/extentreports/reports.html";		
 		reports = new ExtentReports(path);
 		test = reports.startTest("Myntra testCase");
+		
+		String propFilePath = "./Utilities/LoginProperty.properties";
+		File propFile = new File(propFilePath);
+		FileInputStream PropInFile = new FileInputStream(propFile);		
+		prop=new Properties();
+		prop.load(PropInFile);
+		
+		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
 		options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 		driver.get("https://www.myntra.com/");
 		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		
 	}
 	public String getScreenShot(WebDriver driver) throws IOException{
@@ -80,9 +94,18 @@ public class BaseClass {
 	   	
 	@AfterTest
 	public void quitDriver(){
-		driver.quit();
+		//driver.quit();
 		reports.endTest(test);
 		reports.flush();
+	}
+	
+	public String getUserName(){
+		return prop.getProperty("UserName");	
+		
+	}
+	
+	public String getPassword(){
+		return prop.getProperty("Password");
 	}
 	
 }

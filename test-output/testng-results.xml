@@ -1,51 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40690" started-at="2021-08-19T17:55:36Z" finished-at="2021-08-19T17:56:16Z">
+  <suite name="Default suite" duration-ms="65026" started-at="2021-08-28T17:31:33Z" finished-at="2021-08-28T17:32:38Z">
     <groups>
     </groups>
-    <test name="Test2" duration-ms="40690" started-at="2021-08-19T17:55:36Z" finished-at="2021-08-19T17:56:16Z">
+    <test name="Default test" duration-ms="65026" started-at="2021-08-28T17:31:33Z" finished-at="2021-08-28T17:32:38Z">
       <class name="com.myntra.testcases.LoginTestCase">
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="login" duration-ms="13231" started-at="2021-08-19T23:26:01Z" finished-at="2021-08-19T23:26:14Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="setDriver" is-config="true" duration-ms="32027" started-at="2021-08-28T23:01:33Z" finished-at="2021-08-28T23:02:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="login" duration-ms="31881" started-at="2021-08-28T23:02:05Z" finished-at="2021-08-28T23:02:37Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='desktop-searchBar']"}
-  (Session info: chrome=92.0.4515.159)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ENCOPDBANLT0724', ip: '192.168.215.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf60f2a35984d51f25a9cf74ba697e83
-*** Element info: {Using=xpath, value=//input[@class='desktop-searchBar']}]]>
+              <![CDATA[LoginFailure expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='desktop-searchBar']"}
-  (Session info: chrome=92.0.4515.159)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ENCOPDBANLT0724', ip: '192.168.215.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf60f2a35984d51f25a9cf74ba697e83
-*** Element info: {Using=xpath, value=//input[@class='desktop-searchBar']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.myntra.pages.SearchPage.clickSearch(SearchPage.java:20)
-	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:20)
+              <![CDATA[java.lang.AssertionError: LoginFailure expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -73,47 +49,26 @@ Session ID: cf60f2a35984d51f25a9cf74ba697e83
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="endTest" is-config="true" duration-ms="457" started-at="2021-08-19T23:26:14Z" finished-at="2021-08-19T23:26:15Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="endTest" is-config="true" duration-ms="376" started-at="2021-08-28T23:02:37Z" finished-at="2021-08-28T23:02:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=LoginTestCase.login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=LoginTestCase.login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.myntra.testcases.LoginTestCase -->
-      <class name="com.myntra.testcases.SearchTestCase">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="setDriver" is-config="true" duration-ms="11994" started-at="2021-08-19T23:25:36Z" finished-at="2021-08-19T23:25:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="SearchForProduct" duration-ms="13319" started-at="2021-08-19T23:25:48Z" finished-at="2021-08-19T23:26:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchForProduct -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="endTest" is-config="true" duration-ms="3" started-at="2021-08-19T23:26:01Z" finished-at="2021-08-19T23:26:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SearchForProduct status=SUCCESS method=SearchTestCase.SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="quitDriver" is-config="true" duration-ms="1637" started-at="2021-08-19T23:26:15Z" finished-at="2021-08-19T23:26:16Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="quitDriver" is-config="true" duration-ms="685" started-at="2021-08-28T23:02:37Z" finished-at="2021-08-28T23:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.myntra.testcases.SearchTestCase -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.myntra.testcases.LoginTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

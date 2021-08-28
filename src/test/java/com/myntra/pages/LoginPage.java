@@ -31,6 +31,17 @@ public class LoginPage {
 		driver.findElement(By.xpath(MYPROFILE)).click();
 		driver.findElement(By.xpath(LOGIN)).click();		
 	}
+	
+	public boolean isLoginBtndispayed(){
+		try{
+			return (driver.findElement(By.xpath(MYPROFILE)).isDisplayed());
+		}
+		catch(Exception e){
+			return false;
+		}
+		
+		
+	}
 
 
 	public void enterUserName(String uname) {
