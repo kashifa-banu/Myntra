@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65026" started-at="2021-08-28T17:31:33Z" finished-at="2021-08-28T17:32:38Z">
+  <suite name="Suite" duration-ms="64207" started-at="2021-08-28T17:51:36Z" finished-at="2021-08-28T17:52:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65026" started-at="2021-08-28T17:31:33Z" finished-at="2021-08-28T17:32:38Z">
+    <test name="Test2" duration-ms="64207" started-at="2021-08-28T17:51:36Z" finished-at="2021-08-28T17:52:40Z">
       <class name="com.myntra.testcases.LoginTestCase">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="setDriver" is-config="true" duration-ms="32027" started-at="2021-08-28T23:01:33Z" finished-at="2021-08-28T23:02:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="login" duration-ms="31881" started-at="2021-08-28T23:02:05Z" finished-at="2021-08-28T23:02:37Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="login" duration-ms="27281" started-at="2021-08-28T23:22:12Z" finished-at="2021-08-28T23:22:39Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[LoginFailure expected [true] but found [false]]]>
@@ -21,7 +17,7 @@
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:24)
+	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -53,22 +49,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="endTest" is-config="true" duration-ms="376" started-at="2021-08-28T23:02:37Z" finished-at="2021-08-28T23:02:37Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="endTest" is-config="true" duration-ms="329" started-at="2021-08-28T23:22:39Z" finished-at="2021-08-28T23:22:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=LoginTestCase.login()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=LoginTestCase.login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.LoginTestCase@61832929]" name="quitDriver" is-config="true" duration-ms="685" started-at="2021-08-28T23:02:37Z" finished-at="2021-08-28T23:02:38Z">
+      </class> <!-- com.myntra.testcases.LoginTestCase -->
+      <class name="com.myntra.testcases.SearchTestCase">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="setDriver" is-config="true" duration-ms="32150" started-at="2021-08-28T23:21:36Z" finished-at="2021-08-28T23:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="SearchForProduct" duration-ms="3785" started-at="2021-08-28T23:22:08Z" finished-at="2021-08-28T23:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchForProduct -->
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="endTest" is-config="true" duration-ms="5" started-at="2021-08-28T23:22:12Z" finished-at="2021-08-28T23:22:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchForProduct status=SUCCESS method=SearchTestCase.SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="quitDriver" is-config="true" duration-ms="593" started-at="2021-08-28T23:22:39Z" finished-at="2021-08-28T23:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.myntra.testcases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.myntra.testcases.SearchTestCase -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
