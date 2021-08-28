@@ -61,7 +61,7 @@ public class BaseClass {
 		
 	}
 	public String getScreenShot(WebDriver driver) throws IOException{
-		String path = "http://localhost:8080/job/MyntraMavenProject/ws/test-output/ScreenShot/screen1.png";
+		String path = "./test-output/ScreenShot/screen1.png";
 		//String path=System.getProperty("user.dir") + "/test-output/ScreenShot/screen1.png";
 		File dest = new File(path);
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
