@@ -1,91 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="64207" started-at="2021-08-28T17:51:36Z" finished-at="2021-08-28T17:52:40Z">
+  <suite name="Default suite" duration-ms="36235" started-at="2021-08-28T17:57:56Z" finished-at="2021-08-28T17:58:32Z">
     <groups>
     </groups>
-    <test name="Test2" duration-ms="64207" started-at="2021-08-28T17:51:36Z" finished-at="2021-08-28T17:52:40Z">
-      <class name="com.myntra.testcases.LoginTestCase">
-        <test-method status="FAIL" signature="login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="login" duration-ms="27281" started-at="2021-08-28T23:22:12Z" finished-at="2021-08-28T23:22:39Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[LoginFailure expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: LoginFailure expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1]" name="endTest" is-config="true" duration-ms="329" started-at="2021-08-28T23:22:39Z" finished-at="2021-08-28T23:22:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login status=FAILURE method=LoginTestCase.login()[pri:0, instance:com.myntra.testcases.LoginTestCase@3ffc5af1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- com.myntra.testcases.LoginTestCase -->
+    <test name="Default test" duration-ms="36235" started-at="2021-08-28T17:57:56Z" finished-at="2021-08-28T17:58:32Z">
       <class name="com.myntra.testcases.SearchTestCase">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="setDriver" is-config="true" duration-ms="32150" started-at="2021-08-28T23:21:36Z" finished-at="2021-08-28T23:22:08Z">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@61832929]" name="setDriver" is-config="true" duration-ms="31861" started-at="2021-08-28T23:27:56Z" finished-at="2021-08-28T23:28:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="SearchForProduct" duration-ms="3785" started-at="2021-08-28T23:22:08Z" finished-at="2021-08-28T23:22:12Z">
+        <test-method status="PASS" signature="SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@61832929]" name="SearchForProduct" duration-ms="3376" started-at="2021-08-28T23:28:27Z" finished-at="2021-08-28T23:28:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchForProduct -->
-        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="endTest" is-config="true" duration-ms="5" started-at="2021-08-28T23:22:12Z" finished-at="2021-08-28T23:22:12Z">
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.myntra.testcases.SearchTestCase@61832929]" name="endTest" is-config="true" duration-ms="3" started-at="2021-08-28T23:28:31Z" finished-at="2021-08-28T23:28:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchForProduct status=SUCCESS method=SearchTestCase.SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679] output={null}]]]>
+                <![CDATA[[TestResult name=SearchForProduct status=SUCCESS method=SearchTestCase.SearchForProduct()[pri:0, instance:com.myntra.testcases.SearchTestCase@61832929] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@29774679]" name="quitDriver" is-config="true" duration-ms="593" started-at="2021-08-28T23:22:39Z" finished-at="2021-08-28T23:22:40Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.myntra.testcases.SearchTestCase@61832929]" name="quitDriver" is-config="true" duration-ms="955" started-at="2021-08-28T23:28:31Z" finished-at="2021-08-28T23:28:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.myntra.testcases.SearchTestCase -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
