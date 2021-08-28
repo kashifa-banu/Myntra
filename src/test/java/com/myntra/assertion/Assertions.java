@@ -18,4 +18,12 @@ public class Assertions extends BaseClass {
 		
 	}
 
+
+	public static boolean isSearchSuccessfull() {
+		if(driver.getCurrentUrl().contains("jeans"))
+		return true;
+		else
+			return false;
+	}
+
 }

@@ -19,8 +19,6 @@ public class LoginTestCase extends BaseClass{
 		loginpage.clickOnLoginUsingPassword();
 		loginpage.enterPassword(getPassword());
 		loginpage.login();
-		/*SearchPage searchpage = new SearchPage(driver);
-		searchpage.clickSearch();*/
 		Assert.assertTrue(Assertions.isLoginSuccessfull(), "LoginFailure");
 		}
 
