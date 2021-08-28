@@ -35,8 +35,8 @@ public class BaseClass {
 	@BeforeTest
 	public void setDriver() throws IOException{
 		Date date = new Date();
-		String path="http://localhost:8080/job/FreeStyleJob/ws/test-output/extentreports/reports.html";
-	//String path = "./test-output/extentreports/reports.html";		
+		//String path="http://localhost:8080/job/FreeStyleJob/ws/test-output/extentreports/reports.html";
+	String path = "./test-output/extentreports/reports.html";		
 		reports = new ExtentReports(path);
 		test = reports.startTest("Myntra testCase");
 		
