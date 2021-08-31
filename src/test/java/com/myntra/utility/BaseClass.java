@@ -9,15 +9,21 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.TrueFileFilter;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -33,21 +39,28 @@ public class BaseClass {
 	static ExtentReports  reports;
 	static ExtentTest test;
 	static Properties prop;
-	@BeforeTest
+	
+	
+	
+	@BeforeTest(alwaysRun = true)
 	public void setDriver() throws IOException{
 		SimpleDateFormat format = new SimpleDateFormat("YYYY/MM/DD HH:MM:SS");
 		Date date = new Date();
 		SimpleDateFormat timeStamp = new SimpleDateFormat("MMddyyyy_HHmmss");
 		//String path="http://localhost:8080/job/FreeStyleJob/ws/test-output/extentreports/reports.html";
-	String path = "./test-output/extentreports/reports_" +timeStamp.format(date) +".html";		
+	     String path = System.getProperty("user.dir")+"/test-output/extentreports/reports_" +timeStamp.format(date) +".html";		
 		reports = new ExtentReports(path);
+		reports.loadConfig(new File(System.getProperty("user.dir")+ "/Utilities/extent-config.xml"));
 		test = reports.startTest("Myntra testCase");
 		
 		String propFilePath = "./Utilities/LoginProperty.properties";
 		File propFile = new File(propFilePath);
+		
 		FileInputStream PropInFile = new FileInputStream(propFile);		
 		prop=new Properties();
 		prop.load(PropInFile);
+		
+		//driver.findElement(By.cssSelector("input[type='abc']")).click();
 		
 		
 		WebDriverManager.chromedriver().setup();
@@ -60,10 +73,28 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		
 	}
-	public String getScreenShot(WebDriver driver) throws IOException{
+	
+	public String getUserName(){
+		return prop.getProperty("UserName");	
+		
+	}
+	
+	public String getPassword(){
+		return prop.getProperty("Password");
+	}
+	public String getProduct(){
+		return prop.getProperty("product");
+	}
+	
+	/*@BeforeMethod
+	public void startTest(){
+		test = reports.startTest("Myntra testCase");
+	}*/
+	
+	public String getScreenShot(WebDriver driver, String iTestNGMethod ) throws IOException{
 		//String path = "./test-output/ScreenShot/screen1.png";
-		String path = "localhost:8080/job/MyntraMavenProject/ws/test-output/ScreenShot/screen1.png";
-		//String path=System.getProperty("user.dir") + "/test-output/ScreenShot/screen1.png";
+		//String path = "localhost:8080/job/MyntraMavenProject/ws/test-output/ScreenShot/screen1_"+iTestNGMethod+".png";
+		String path=System.getProperty("user.dir") + "/test-output/ScreenShot/screen1_"+iTestNGMethod+".png";
 		File dest = new File(path);
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File src=screenshot.getScreenshotAs(OutputType.FILE);
@@ -78,7 +109,7 @@ public class BaseClass {
 			if(result.getStatus()==ITestResult.FAILURE){
 				test.log(LogStatus.FAIL, result.getMethod()+"fail");
 				test.log(LogStatus.FAIL, "TestCase failed" + result.getThrowable());
-			test.log(LogStatus.INFO, test.addScreenCapture(getScreenShot(driver)));
+			test.log(LogStatus.INFO, test.addScreenCapture(getScreenShot(driver,"abc")));
 			//test.log(LogStatus.FAIL, test.);
 			}
 			else
@@ -87,31 +118,14 @@ public class BaseClass {
 		
 		
 	}
-/*	 public static String capture(WebDriver driver,String screenShotName) throws IOException
-	    {
-	        TakesScreenshot ts = (TakesScreenshot)driver;
-	        File source = ts.getScreenshotAs(OutputType.FILE);
-	        String dest = System.getProperty("user.dir") + "\ErrorScreenshots\" +screenShotName+".png";
-	        File destination = new File(dest);
-	        FileUtils.copyFile(source, destination);        
-	                     
-	        return dest;
-	    }*/
-	   	
-	@AfterTest
+ 	
+	@AfterTest(alwaysRun = true)
 	public void quitDriver(){
 		driver.quit();
 		reports.endTest(test);
 		reports.flush();
-	}
-	
-	public String getUserName(){
-		return prop.getProperty("UserName");	
 		
 	}
 	
-	public String getPassword(){
-		return prop.getProperty("Password");
-	}
 	
 }
