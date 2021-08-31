@@ -10,7 +10,7 @@ import com.myntra.utility.BaseClass;
 
 public class LoginTestCase extends BaseClass{
 	
-	@Test
+	@Test(groups = {"regression"})
 	void login() throws InterruptedException{
 		LoginPage loginpage= new LoginPage(driver);
 		loginpage.clicklogin();

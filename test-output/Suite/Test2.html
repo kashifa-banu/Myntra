@@ -57,11 +57,11 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 29 00:24:19 IST 2021</td>
+<td>Started on:</td><td>Tue Aug 31 18:31:02 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41048 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40408 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>regression smoke </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,53 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.myntra.testcases.LoginTestCase.login()'><b>login</b><br>Test class: com.myntra.testcases.LoginTestCase</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Password&apos;)]/parent::div&quot;}
-  (Session info: chrome=92.0.4515.159)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ENCOPDBANLT0724&apos;, ip: &apos;192.168.166.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe1d3240c08946c7d6b602d16ce29b85
-*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Password&apos;)]/parent::div}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.myntra.pages.LoginPage.clickOnLoginUsingPassword(LoginPage.java:65)
-	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:19)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366803687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace366803687'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Password&apos;)]/parent::div&quot;}
-  (Session info: chrome=92.0.4515.159)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ENCOPDBANLT0724&apos;, ip: &apos;192.168.166.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\KASHIF~1.BAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe1d3240c08946c7d6b602d16ce29b85
-*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Password&apos;)]/parent::div}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.myntra.pages.LoginPage.clickOnLoginUsingPassword(LoginPage.java:65)
-	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:19)
+<td><div><pre>java.lang.AssertionError: LoginFailure expected [true] but found [false]
+	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:22)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace69673470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace69673470'><pre>java.lang.AssertionError: LoginFailure expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.myntra.testcases.LoginTestCase.login(LoginTestCase.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -149,8 +110,8 @@ Session ID: fe1d3240c08946c7d6b602d16ce29b85
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>10</td>
-<td>com.myntra.testcases.LoginTestCase@27efef64</td></tr>
+<td>15</td>
+<td>com.myntra.testcases.LoginTestCase@66a3ffec</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -162,8 +123,8 @@ Session ID: fe1d3240c08946c7d6b602d16ce29b85
 <tr>
 <td title='com.myntra.testcases.SearchTestCase.SearchForProduct()'><b>SearchForProduct</b><br>Test class: com.myntra.testcases.SearchTestCase</td>
 <td></td>
-<td>17</td>
-<td>com.myntra.testcases.SearchTestCase@59f99ea</td></tr>
+<td>5</td>
+<td>com.myntra.testcases.SearchTestCase@3e6fa38a</td></tr>
 </table><p>
 </body>
 </html>
